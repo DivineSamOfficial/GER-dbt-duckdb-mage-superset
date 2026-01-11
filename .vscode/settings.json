@@ -1,0 +1,25 @@
+{
+  "dbt.perspectiveTheme": "Vintage",
+  "dbt.queryLimit": 1000,
+
+  // ---------- SQL formatting ----------
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
+    "editor.formatOnSave": true
+  },
+
+  // ---------- dbt / Jinja SQL ----------
+  "[jinja-sql]": {
+    "editor.defaultFormatter": "innoverio.vscode-dbt-power-user",
+    "editor.formatOnSave": true
+  },
+
+  // ---------- SQL Formatter config ----------
+  "sql-formatter.dialect": "sql",
+  "sql-formatter.uppercase": true,
+  "sql-formatter.indent": 2,
+  "sql-formatter.linesBetweenQueries": 2,
+  "sql-formatter.expressionWidth": 80,
+  "sql-formatter.commaPosition": "before",
+  "sql-formatter.denseOperators": false
+}

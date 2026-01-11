@@ -1,0 +1,37 @@
+===== DBT STDOUT =====
+[0m16:46:38  Running with dbt=1.10.0
+[0m16:46:38  Registered adapter: duckdb=1.10.0
+[0m16:46:38  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ge_dbt.lake_view
+[0m16:46:38  Found 9 models, 2 data tests, 6 sources, 444 macros
+[0m16:46:38  
+[0m16:46:38  Concurrency: 1 threads (target='dev')
+[0m16:46:38  
+[0m16:46:38  1 of 9 START sql incremental model staging.stg_customers ....................... [RUN]
+[0m16:46:46  1 of 9 OK created sql incremental model staging.stg_customers .................. [[32mOK[0m in 7.28s]
+[0m16:46:46  2 of 9 START sql incremental model staging.stg_exchange_rates .................. [RUN]
+[0m16:46:54  2 of 9 OK created sql incremental model staging.stg_exchange_rates ............. [[32mOK[0m in 7.92s]
+[0m16:46:54  3 of 9 START sql incremental model staging.stg_products ........................ [RUN]
+[0m16:47:00  3 of 9 OK created sql incremental model staging.stg_products ................... [[32mOK[0m in 5.90s]
+[0m16:47:00  4 of 9 START sql incremental model staging.stg_sales ........................... [RUN]
+[0m16:47:07  4 of 9 OK created sql incremental model staging.stg_sales ...................... [[32mOK[0m in 7.92s]
+[0m16:47:07  5 of 9 START sql incremental model staging.stg_stores .......................... [RUN]
+[0m16:47:11  5 of 9 OK created sql incremental model staging.stg_stores ..................... [[32mOK[0m in 3.67s]
+[0m16:47:11  6 of 9 START sql table model marts.dim_customers ............................... [RUN]
+[0m16:47:11  6 of 9 OK created sql table model marts.dim_customers .......................... [[32mOK[0m in 0.06s]
+[0m16:47:11  7 of 9 START sql table model marts.dim_products ................................ [RUN]
+[0m16:47:11  7 of 9 OK created sql table model marts.dim_products ........................... [[32mOK[0m in 0.02s]
+[0m16:47:11  8 of 9 START sql table model marts.dim_stores .................................. [RUN]
+[0m16:47:11  8 of 9 OK created sql table model marts.dim_stores ............................. [[32mOK[0m in 0.02s]
+[0m16:47:11  9 of 9 START sql incremental model marts.fct_sales ............................. [RUN]
+[0m16:47:11  9 of 9 OK created sql incremental model marts.fct_sales ........................ [[32mOK[0m in 0.03s]
+[0m16:47:11  
+[0m16:47:11  Finished running 6 incremental models, 3 table models in 0 hours 0 minutes and 32.93 seconds (32.93s).
+[0m16:47:11  
+[0m16:47:11  [32mCompleted successfully[0m
+[0m16:47:11  
+[0m16:47:11  Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=9
+
+
+===== DBT STDERR =====

@@ -1,0 +1,15 @@
+ge_venv/
+ge_dbt/logs/
+superset/superset_venv/
+*.duckdb.wal
+*.duckdb.tmp
+ge_mage/mage_data/
+ge_mage/.env
+superset.db
+.superset/
+.DS_Store
+.vscode/
+.env
+.env.*
+superset/superset_venv
+ge_venv

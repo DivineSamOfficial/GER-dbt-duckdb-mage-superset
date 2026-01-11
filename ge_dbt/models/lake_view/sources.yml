@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: lake_view
+    schema: lake
+    description: >
+      Raw source data mimicking lake ingestion from Google Sheets and exposed
+      as DuckDB views.
+
+    tables:
+      - name: ge_data_dictionary_lake_view
+        description: Column level details of all tables.
+
+      - name: ge_customers_lake_view
+        description: Customer Information.
+        columns:
+            - name: CustomerKey
+              tests:
+                - unique
+                - not_null
+      - name: ge_products_lake_view
+        description: Product Information.
+
+      - name: ge_sales_lake_view
+        description: Sales information.
+    
+      - name: ge_stores_lake_view
+        description: Retail Stores Information
+
+      - name: ge_exchange_rates_lake_view
+        description: Foreign exchange rates of different currenies to USD
+

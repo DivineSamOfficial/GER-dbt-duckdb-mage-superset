@@ -1,0 +1,12 @@
+ge_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /Users/divinesam/GER-dbt-duckdb-mage-superset/dev.duckdb
+      threads: 1
+
+    prod:
+      type: duckdb
+      path: /Users/divinesam/GER-dbt-duckdb-mage-superset/prods.duckdb
+      threads: 4

@@ -1,0 +1,109 @@
+[0m16:07:10.064806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10727c130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110be8dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110be89d0>]}
+
+
+============================== 16:07:10.073319 | 958a3f7d-9c95-41db-8178-e8617d7200c4 ==============================
+[0m16:07:10.073319 [info ] [MainThread]: Running with dbt=1.10.0
+[0m16:07:10.074300 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/divinesam/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt init dbt', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:07:18.016293 [debug] [MainThread]: Starter project path: /Users/divinesam/GER-dbt-duckdb-mage-superset/ge_venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m16:07:18.026479 [info ] [MainThread]: 
+Your new dbt project "ge_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:07:18.026999 [info ] [MainThread]: Setting up your profile.
+[0m16:07:28.153390 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 18.971014, "process_in_blocks": "0", "process_kernel_time": 0.212051, "process_mem_max_rss": "93093888", "process_out_blocks": "0", "process_user_time": 0.984405}
+[0m16:07:28.154114 [debug] [MainThread]: Command `dbt init` succeeded at 16:07:28.154006 after 18.97 seconds
+[0m16:07:28.154509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10727c130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110beab60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110beaef0>]}
+[0m16:07:28.154864 [debug] [MainThread]: Flushing usage events
+[0m16:07:29.525286 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:06:14.602367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10636c220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107e4c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107e4820>]}
+
+
+============================== 17:06:14.604901 | c2bd0500-4d59-4a7e-ad4c-876d217482c5 ==============================
+[0m17:06:14.604901 [info ] [MainThread]: Running with dbt=1.10.0
+[0m17:06:14.605269 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/Users/divinesam/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:06:14.605642 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/divinesam/GER-dbt-duckdb-mage-superset/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:06:14.607749 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.063027665, "process_in_blocks": "0", "process_kernel_time": 0.114367, "process_mem_max_rss": "98861056", "process_out_blocks": "0", "process_user_time": 0.702332}
+[0m17:06:14.608071 [debug] [MainThread]: Command `dbt run` failed at 17:06:14.608014 after 0.06 seconds
+[0m17:06:14.608300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10636c220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107e4c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107e4c70>]}
+[0m17:06:14.608591 [debug] [MainThread]: Flushing usage events
+[0m17:06:16.173770 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:05:02.963360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x16a884730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067d2230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067d2260>]}
+
+
+============================== 23:05:02.973627 | 7ef609d1-160e-4cb4-ab42-7a34db160190 ==============================
+[0m23:05:02.973627 [info ] [MainThread]: Running with dbt=1.10.0
+[0m23:05:02.974617 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/divinesam/GER-dbt-duckdb-mage-superset/ge_mage/.profiles_interpolated_temp_ecb9f89f-5d8d-4292-8977-c39b2d8e5f05', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt -f /private/var/folders/0q/wrdr27n94bq1hxcd4qmq95lc0000gn/T/tmpi4282olq.json', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:05:02.977546 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/divinesam/GER-dbt-duckdb-mage-superset/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:05:02.986805 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": false, "command_wall_clock_time": 0.039330292, "process_in_blocks": "0", "process_kernel_time": 2.234263, "process_mem_max_rss": "330121216", "process_out_blocks": "0", "process_user_time": 5.941279}
+[0m23:05:02.987286 [debug] [MainThread]: Command `cli deps` failed at 23:05:02.987201 after 0.04 seconds
+[0m23:05:02.987583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x16a884730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067d2e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067d2230>]}
+[0m23:05:02.987912 [debug] [MainThread]: Flushing usage events
+[0m23:05:04.733063 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:05:04.747205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1673d82e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070055d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107005570>]}
+
+
+============================== 23:05:04.748153 | a4b31836-17b5-4e04-bf34-538122ed5860 ==============================
+[0m23:05:04.748153 [info ] [MainThread]: Running with dbt=1.10.0
+[0m23:05:04.750468 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/divinesam/GER-dbt-duckdb-mage-superset/ge_mage/.profiles_interpolated_temp_ecb9f89f-5d8d-4292-8977-c39b2d8e5f05', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt -f /private/var/folders/0q/wrdr27n94bq1hxcd4qmq95lc0000gn/T/tmpi4282olq.json', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:05:04.752135 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/divinesam/GER-dbt-duckdb-mage-superset/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:05:04.754137 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.009776125, "process_in_blocks": "0", "process_kernel_time": 2.251339, "process_mem_max_rss": "330121216", "process_out_blocks": "0", "process_user_time": 5.984394}
+[0m23:05:04.755026 [debug] [MainThread]: Command `cli run` failed at 23:05:04.754906 after 0.01 seconds
+[0m23:05:04.755971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1673d82e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107005570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107005600>]}
+[0m23:05:04.756730 [debug] [MainThread]: Flushing usage events
+[0m23:05:06.464009 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:05:08.269179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x168b94be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x168b951b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107005720>]}
+
+
+============================== 23:05:08.269601 | 87bab15f-8bfc-4663-a5b5-6d8d3f89bdae ==============================
+[0m23:05:08.269601 [info ] [MainThread]: Running with dbt=1.10.0
+[0m23:05:08.270533 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/divinesam/GER-dbt-duckdb-mage-superset/ge_mage/.profiles_interpolated_temp_1c8d9e40-3d19-454d-b114-185e5c0b0d72', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt -f /private/var/folders/0q/wrdr27n94bq1hxcd4qmq95lc0000gn/T/tmpi4282olq.json', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:05:08.271220 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/divinesam/GER-dbt-duckdb-mage-superset/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:05:08.272004 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": false, "command_wall_clock_time": 0.0041877087, "process_in_blocks": "0", "process_kernel_time": 2.283947, "process_mem_max_rss": "330121216", "process_out_blocks": "0", "process_user_time": 6.429161}
+[0m23:05:08.272404 [debug] [MainThread]: Command `cli deps` failed at 23:05:08.272348 after 0.00 seconds
+[0m23:05:08.272786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x168b94be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067eb490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067e8b80>]}
+[0m23:05:08.273240 [debug] [MainThread]: Flushing usage events
+[0m23:05:09.629955 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:05:09.644468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107006380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x168b95210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x16c33ff40>]}
+
+
+============================== 23:05:09.646589 | 869b5b61-ed14-4095-838c-1e43614c3720 ==============================
+[0m23:05:09.646589 [info ] [MainThread]: Running with dbt=1.10.0
+[0m23:05:09.649297 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/divinesam/GER-dbt-duckdb-mage-superset/ge_mage/.profiles_interpolated_temp_1c8d9e40-3d19-454d-b114-185e5c0b0d72', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt -f /private/var/folders/0q/wrdr27n94bq1hxcd4qmq95lc0000gn/T/tmpi4282olq.json', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:05:09.651567 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/divinesam/GER-dbt-duckdb-mage-superset/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:05:09.653727 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.01265325, "process_in_blocks": "0", "process_kernel_time": 2.290787, "process_mem_max_rss": "330121216", "process_out_blocks": "0", "process_user_time": 6.470029}
+[0m23:05:09.654667 [debug] [MainThread]: Command `cli run` failed at 23:05:09.654519 after 0.01 seconds
+[0m23:05:09.655735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107006380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x168b95210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067e8af0>]}
+[0m23:05:09.657144 [debug] [MainThread]: Flushing usage events
+[0m23:05:11.043549 [debug] [MainThread]: An error was encountered while trying to flush usage events
