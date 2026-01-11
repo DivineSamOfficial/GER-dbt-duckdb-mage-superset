@@ -2,11 +2,11 @@
 
 ### DuckDB · dbt · Mage · Apache Superset
 
-<p align="center">
+<p align="left">
   <b>A production-style local analytics stack demonstrating the full analytics lifecycle</b>
 </p>
 
-<p align="center">
+<p align="left">
   <a href="#architecture">Architecture</a> •
   <a href="#tech-stack">Tech Stack</a> •
   <a href="#data-modeling">Data Modeling</a> •
@@ -49,7 +49,7 @@ The analytics layer enables stakeholders to:
 ## 🏗️ Architecture
 
 <p align="center">
-  <img src="<ARCHITECTURE_DIAGRAM_URL>" alt="Architecture Diagram" width="800" />
+  <img src="https://github.com/DivineSamOfficial/GER-dbt-duckdb-mage-superset/blob/main/assets/ArchDIag.jpg" alt="Architecture Diagram" width="800" />
 </p>
 
 ### High-Level Flow
@@ -112,6 +112,12 @@ GER-dbt-duckdb-mage-superset/
 ---
 
 ## 🧪 Data Modeling (dbt)
+<p align="center">
+  <img src="https://github.com/DivineSamOfficial/GER-dbt-duckdb-mage-superset/blob/main/assets/DBT%20Code.png" alt="Architecture Diagram" width="800" />
+</p>
+<p align="center">
+  <img src="https://github.com/DivineSamOfficial/GER-dbt-duckdb-mage-superset/blob/main/assets/DUCKDB%20UI.png" alt="Architecture Diagram" width="800" />
+</p>
 
 ### Layered Modeling Strategy
 
@@ -146,6 +152,7 @@ Staging models serve as the **contract layer** between raw data and analytics.
 
 ### 🔹 Mart Models (`dim_`, `fct_`)
 
+
 Mart models are **business-facing** and optimized for BI.
 
 **Dimensions:**
@@ -173,7 +180,7 @@ Mage is used purely as an **orchestration engine**, not for transformations.
 ### Pipeline Overview
 
 <p align="center">
-  <img src="<PIPELINE_RUN_IMAGE_URL>" alt="Mage Pipeline Run" width="800" />
+  <img src="https://github.com/DivineSamOfficial/GER-dbt-duckdb-mage-superset/blob/main/assets/pipeline_run.png" alt="Mage Pipeline Run" width="800" />
 </p>
 
 ```
@@ -198,7 +205,7 @@ dbt_test_models
 Apache Superset serves as the **BI and dashboard layer**.
 
 <p align="center">
-  <img src="<SUPERSET_DASHBOARD_IMAGE_URL>" alt="Superset Dashboard" width="800" />
+  <img src="https://github.com/DivineSamOfficial/GER-dbt-duckdb-mage-superset/blob/main/assets/Dahsboard.png" alt="Superset Dashboard" width="800" />
 </p>
 
 ### Superset Highlights
